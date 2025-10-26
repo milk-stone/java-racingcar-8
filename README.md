@@ -31,7 +31,7 @@
   - Model : 자동차의 이름과 현재 위치를 저장할 `Car.java`, 레이싱 게임을 진행할 `RacingGame.java`
   - View : 프로그램 입력과 출력을 담당할 `InputView.java`, `OutputView.java`
   - Controller : 경주 게임을 관리하는 `RaceController.java`
-- [ ] 입출력 구현
+- [x] 입출력 구현
   - 경주할 n대의 자동차의 이름 입력 받기
   - 시도할 횟수 k 입력 받기
   - 차수별 실행 결과 출력하기
