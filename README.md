@@ -27,10 +27,10 @@
 6. indent depth 가 3이 넘지 않도록 코드를 리팩토링한다.
 
 ## 구현할 기능 목록
-- [ ] 뼈대 코드 구축
-  - Model : 자동차의 이름과 현재 위치를 저장할 `Car.java`
+- [x] 뼈대 코드 구축
+  - Model : 자동차의 이름과 현재 위치를 저장할 `Car.java`, 레이싱 게임을 진행할 `RacingGame.java`
   - View : 프로그램 입력과 출력을 담당할 `InputView.java`, `OutputView.java`
-  - Controller : 경주 게임을 진행하는 `RaceController.java`
+  - Controller : 경주 게임을 관리하는 `RaceController.java`
 - [ ] 입출력 구현
   - 경주할 n대의 자동차의 이름 입력 받기
   - 시도할 횟수 k 입력 받기
