@@ -63,4 +63,25 @@ public class RacingGame {
             }
         }
     }
+
+    private int findMaxPosition() {
+        int maxPosition = 0;
+        for (Car car : cars) {
+            if (maxPosition < car.getPosition()) {
+                maxPosition = car.getPosition();
+            }
+        }
+        return maxPosition;
+    }
+
+    public List<String> getWinnerNames() {
+        int maxPosition = findMaxPosition();
+        List<String> winnerNames = new ArrayList<>();
+        for (Car car : cars) {
+            if (car.getPosition() == maxPosition) {
+                winnerNames.add(car.getName());
+            }
+        }
+        return winnerNames;
+    }
 }
