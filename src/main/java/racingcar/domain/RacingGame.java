@@ -8,6 +8,7 @@ import java.util.List;
 
 public class RacingGame {
     private static final String NAME_SEPARATOR = ",";
+    private static final int MOVE_THRESHOLD = 4;
 
     private final List<Car> cars;
     private final int trialCount;
@@ -47,5 +48,19 @@ public class RacingGame {
         }
 
         return trialCount;
+    }
+
+    private boolean shouldMove() {
+        int randomNumber = Randoms.pickNumberInRange(0, 9);
+        return randomNumber >= MOVE_THRESHOLD;
+    }
+
+
+    public void runRound() {
+        for (Car car : cars) {
+            if (shouldMove()) {
+                car.move();
+            }
+        }
     }
 }
